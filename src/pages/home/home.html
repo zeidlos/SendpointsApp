@@ -1,14 +1,18 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <ion-icon name="paper-plane"></ion-icon>
+      SendPoints
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <div #map id="map" style="height:100%;"></div>
+
+  <button class="action-button" type="button" name="button" ion-button (click)="addMarker()">
+    <ion-icon ios="ios-locate-outline" md="md-locate"></ion-icon>
+  </button>
+  <!-- {{ coordinates.coords.latitude }} -->
 </ion-content>
