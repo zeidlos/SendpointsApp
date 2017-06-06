@@ -1,6 +1,6 @@
 {
-  "name": "pd-boilerplate",
-  "version": "0.0.1",
+  "name": "SendpointsApp",
+  "version": "0.0.0-development",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -41,5 +41,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeidlos/SendpointsApp.git"
   }
 }
