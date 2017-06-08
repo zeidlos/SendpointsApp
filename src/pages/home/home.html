@@ -1,14 +1,33 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <ion-icon name="paper-plane"></ion-icon>
+      SendPoints
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <input id="pac-input" class="controls" type="text" placeholder="Search a location">
+
+  <div id="type-selector" class="controls">
+    <input type="radio" name="type" id="changetype-all" checked="checked">
+    <label for="changetype-all">All</label>
+
+    <input type="radio" name="type" id="changetype-establishment">
+    <label for="changetype-establishment">Establishments</label>
+
+    <input type="radio" name="type" id="changetype-address">
+    <label for="changetype-address">Addresses</label>
+
+    <input type="radio" name="type" id="changetype-geocode">
+    <label for="changetype-geocode">Geocodes</label>
+  </div>
+
+  <div #map id="map" style="height:100%;"></div>
+
+  <button class="action-button" type="button" name="button" ion-button (click)="addMarker()">
+    <ion-icon ios="ios-locate-outline" md="md-locate"></ion-icon>
+  </button>
+  <!-- {{ coordinates.coords.latitude }} -->
 </ion-content>
